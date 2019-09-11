@@ -21,6 +21,7 @@ def hello():
    cur = conn.cursor()
    query = "select * from supplies"
    cur.execute(query)
+   print(query)    
    for row in cur:
        print(row[2])
 
